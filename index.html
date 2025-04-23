@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+    <h1>Weather App</h1>
+    <div class="weather-container">
+      <div class="weather-info-container hidden">
+        <div id="location" class="main-weather-location">
+          <span class="location-label title">London</span>
+
+        </div>
+
+        <div class="header-container">
+          <div id="main-temperature" class="main-temp-container">
+            <span class="main-weather-text header">2.62 &deg;C</span>          
+          </div>
+      
+          <div class="main-weather-img-container">
+            <img id="weather-icon" class="img-weather-icon" src="https://cdn.freecodecamp.org/weather-icons/01n.png" alt="" />
+          </div>
+
+          <div id="weather-main">
+            <span class="weather-main-text header">Clear</span>
+          </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="main-container">
+      <div id="humidity">
+        <span class="main-humidity-text main">Humidity: 81%</span>
+      </div>
+
+      <div id="feels-like">
+        <span class="main-feels-like-text main">Feels Like: 0.84 &deg;C</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="wind-container">
+      <div class="wind-elements">
+        <div id="wind">
+          <span class="wind-text main">Wind: 1.79 m/s</span>
+        </div>
+
+      <div id="wind-gust">
+        <span class="wind-gust-text main">Gusts: 3.13 m/s</span>
+      </div>
+      </div>
+
+      
+
+        </div>
+        </div>
+    </div>
+
+    <div class="btn-container">
+      <span class="weather-text-span">Weather For: </span>
+      <select name="location" id="location-selector" class="location-to-select">
+        <option value=""></option>
+<option value="new york">New York</option>
+<option value="los angeles">Los Angeles</option>
+<option value="chicago">Chicago</option>
+<option value="paris">Paris</option>
+<option value="tokyo">Tokyo</option>
+<option value="london">London</option>
+
+      </select>
+      <button id="get-forecast" class="forecast-btn">Get Forecast</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
